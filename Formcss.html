@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern HTML Form</title>
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Container Styling */
+        form {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+        }
+
+        /* Label and Input Styling */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="month"],
+        input[type="week"],
+        input[type="number"],
+        input[type="file"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* padding fix */
+        }
+
+        /* Radio & Checkbox Row */
+        .row-group {
+            margin-bottom: 15px;
+        }
+
+        .row-group label {
+            display: inline-block;
+            font-weight: normal;
+            margin-right: 15px;
+        }
+
+        /* Buttons Styling */
+        input[type="submit"], 
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        input[type="reset"] {
+            background-color: #dc3545;
+            color: white;
+            margin-left: 10px;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #c82333;
+        }
+
+        p {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <label for="username">Name</label>
+        <input type="text" name="username" id="username" placeholder="Enter your name" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob" required>
+
+        <label for="month">Month</label>
+        <input type="month" name="month" id="month" required>
+
+        <label for="week">Week</label>
+        <input type="week" name="week" id="week" required>
+
+        <label for="number">Number</label>
+        <input type="number" name="number" id="number" required>
+
+        <p>Gender</p>
+        <div class="row-group">
+            <label><input type="radio" name="Gender" value="male" required> Male</label>
+            <label><input type="radio" name="Gender" value="female"> Female</label>
+        </div>
+
+        <p>Course</p>
+        <div class="row-group">
+            <label><input type="checkbox" name="course" value="MCA"> MCA</label>
+            <label><input type="checkbox" name="course" value="BCA"> BCA</label>
+        </div>
+
+        <label for="Qualification">Highest Qualification</label>
+        <select name="Qualification" id="Qualification">
+            <option value="">Select</option>
+            <option value="10">10th</option>
+            <option value="12">12th</option>
+            <option value="graduation">Graduation</option>
+        </select>
+
+        <label for="resume">Upload Resume</label>
+        <input type="file" id="resume" accept=".pdf,.doc,.docx" multiple>
+
+        <div style="margin-top: 20px;">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </fieldset>
+</form>
+
+</body>
+</html>
