@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern HTML Form</title>
+    <title>HTML-Form</title>
     <style>
         /* Basic Reset */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f6;
+            background-color: rgb(248, 230, 230);
             display: flex;
             justify-content: center;
             padding: 20px;
@@ -16,17 +16,18 @@
 
         /* Container Styling */
         form {
-            background: #fff;
+            background: rgb(80, 76, 76);
             padding: 25px;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             max-width: 500px;
             width: 100%;
         }
 
+        /* Fieldset Styling */
         fieldset {
             border: none;
             padding: 0;
+            background-color: rgb(79, 75, 75);
         }
 
         /* Label and Input Styling */
@@ -34,7 +35,7 @@
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
-            color: #333;
+            color: white;
         }
 
         input[type="text"],
@@ -44,20 +45,23 @@
         input[type="week"],
         input[type="number"],
         input[type="file"],
+
+        /* Section Styling */
         select {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
+            border: 1px solid white;
             border-radius: 5px;
-            box-sizing: border-box; /* padding fix */
+            box-sizing: border-box;
         }
 
-        /* Radio & Checkbox Row */
+        /* Radio & Checkbox Row Styling*/
         .row-group {
             margin-bottom: 15px;
         }
 
+        /* Row Group Styling */
         .row-group label {
             display: inline-block;
             font-weight: normal;
@@ -75,29 +79,35 @@
             transition: 0.3s;
         }
 
+        /* Input Submit Styling */
         input[type="submit"] {
             background-color: #28a745;
-            color: white;
+            color: rgb(244, 242, 245);
         }
 
+        /* Input Submit Hover Styling */
         input[type="submit"]:hover {
-            background-color: #218838;
+            background-color: #13d53d;
         }
 
-        input[type="reset"] {
-            background-color: #dc3545;
-            color: white;
+        /* Input Reset Styling */
+        input[type="reset"]
+        {
+            background-color: #f50606;
+            color: rgb(249, 247, 247);
             margin-left: 10px;
         }
 
+        /* Input Reset Hover Styling */       
         input[type="reset"]:hover {
             background-color: #c82333;
         }
 
-        p {
+        /* Paragraph Styling */
+        #para {
             margin-bottom: 8px;
             font-weight: bold;
-            color: #555;
+            color: white;
         }
     </style>
 </head>
@@ -123,13 +133,13 @@
         <label for="number">Number</label>
         <input type="number" name="number" id="number" required>
 
-        <p>Gender</p>
+        <p id="para">Gender</p>
         <div class="row-group">
             <label><input type="radio" name="Gender" value="male" required> Male</label>
             <label><input type="radio" name="Gender" value="female"> Female</label>
         </div>
 
-        <p>Course</p>
+        <p id="para">Course</p>
         <div class="row-group">
             <label><input type="checkbox" name="course" value="MCA"> MCA</label>
             <label><input type="checkbox" name="course" value="BCA"> BCA</label>

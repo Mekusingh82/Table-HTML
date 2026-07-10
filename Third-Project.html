@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Third-Project</title>
+
+    <style>
+        body {
+            padding: 20px;
+            margin: 0px;
+            background-color: antiquewhite;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: white;
+            text-align: center;
+        }
+
+        #title {
+            margin: 0px;
+            text-align: center;
+            color: hwb(0 5% 9%);
+            font-family: "Magneto", "Arial black";
+            font-size: 40px;
+        }
+
+        #subtitle {
+            color: gray;
+            font-style: italic;
+            letter-spacing: 2px;
+            font-variant: small-caps;
+        }
+
+        section {
+            background-color: white;
+            width: 100%;
+            height: 380px;
+            border-radius: 5px;
+        }
+
+        #heading1 {
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-top: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid black;
+            color: #4b4ba9;
+
+        }
+
+        #div1 {
+            width: 98%;
+            height: 250px;
+            background-color: lch(96.34% 1.59 303.07);
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 15px;
+            margin-right: 20px;
+            text-align: justify;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 90px;
+            margin-left: 20px;
+        }
+
+        #para1 {
+            color: lch(8.77% 29.66 292.76);
+            font-family: serif;
+            font-size: 20px;
+            float: justify;
+            padding-top: 40px;
+            margin-bottom: 10px;
+            /* margin-left: 10px; */
+            margin-right: 10px;
+        }
+
+        #para2 {
+            color: oklab(35.88% 0.02866 -0.17435);
+            font-size: 20px;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            /* margin-left: 20px; */
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            text-shadow: 1px 1px 4px rgb(10, 9, 9);
+        }
+
+        a {
+            color: rgb(237, 57, 60);
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            margin-left: 20px;
+        }
+
+        #div {
+            float: left;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #section2 {
+            width: 100%;
+            height: 350px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #heading2 {
+            color: hwb(235 16% 43%);
+            margin-left: 20px;
+            padding-top: 40px;
+
+        }
+
+        caption {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            text-align: left;
+            font-style: italic;
+            font-weight: 700;
+
+        }
+
+        table {
+            width: 98%;
+            height: 20px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 13px;
+            margin-right: 10px;
+            background-color: #f0f4f5;
+
+        }
+
+        #tr1 {
+            margin-left: 5px;
+            border: 2px;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #0454ab;
+            color: white;
+            padding: 10px;
+            margin-left: 5px;
+            text-align: left;
+            font-size: 20px;
+            margin: 10px;
+            font-family: Courier, monospace;
+        }
+
+        #section3 {
+            background-color: white;
+            width: 100%;
+            height: 670px;
+            margin-top: 45px;
+            border-radius: 10px;
+        }
+
+        td {
+            border: 1px solid #d7cfcf;
+            padding: 10px;
+            margin-left: 5px;
+            font-family: Verdana, Geneva, ;
+            font-size: 17px;
+            border: none;
+        }
+
+        #heading3 {
+            color: hwb(235 6% 55%);
+            margin-left: 20px;
+            padding-top: 40px;
+        }
+
+        fieldset {
+            width: 94%;
+            height: 500px;
+            border-color: black;
+            background-color: hwb(30 97% 2%);
+            padding: 25px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        #standard {
+            size: 50px;
+            width: 100%;
+            height: 25px;
+            font-family: Arial;
+            background-color: #dac8d6;
+        }
+
+        input {
+            size: 50px;
+            width: 100%;
+            height: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #d8dac8;
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        .r {
+            width: 15px;
+            color: rgb(221, 125, 56);
+            margin-left: 10px;
+
+        }
+
+        legend {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #btn1 {
+            width: 150px;
+            height: 30px;
+            font-size: 15px;
+            font-family: system-ui;
+            color: white;
+            background-color: #3e47a4;
+            border-radius: 10px;
+            border: none;
+        }
+
+        #btn2 {
+            width: 150px;
+            height: 30px;
+            font-size: 15px;
+            font-family: sans-serif;
+            margin-left: 5px;
+            border-radius: 10px;
+        }
+
+        footer {
+            color: rgb(58, 14, 14);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20PX;
+            text-align: center;
+
+        }
+
+        #p1 {
+            padding-top: 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="photo">
+        <header>
+            <h1 id="title">Codes - World Portal</h1>
+            <p id="subtitle">Mastering Core HTML & CSS Concept</p>
+        </header>
+
+        <main>
+            <section>
+                <h2 id="heading1">Undertanding Text Formatting & Floats</h2>
+                <div id="div1">
+
+                    <div id="div">
+                        <img src="image\d.jpg" alt="Image" width="400px" height="500px">
+                        <a href="https://www.google.com">
+                            Visit Google for Reference
+                        </a>
+
+                    </div>
+                    <p id="para1">This section demonstates text alignment, transformation, and word spacing.
+                        This image beside this text <b>CSS Float property.</b>As specified in the notes,
+                        floats push an element to the left or right, allowing the text flow to gracefully wrap right
+                        around
+                        it.</p>
+
+                    <p id="para2">This Specific Sentance Showcases Custom Letter-Spacing, Text-Shadows,
+                        And A Capitalization Transformation.</p>
+
+                </div>
+            </section>
+
+            <section id="section2">
+                <h2 id="heading2">Course Modules & History</h2>
+
+                <table>
+                    <caption>CSS Envolution Timeline</caption>
+                    <tr id="tr1">
+                        <th>Year</th>
+                        <th>Specification</th>
+                        <th>Key Features</th>
+                    </tr>
+
+                    <tr>
+                        <td>1994</td>
+                        <td>The Proposal </td>
+                        <td>First conceptualized by Hakon Wium Lie at CERN.</td>
+                    </tr>
+
+                    <tr>
+                        <td>1996</td>
+                        <td>CSS1</td>
+                        <td>W3C official release supporting fonts, color, and margins.</td>
+                    </tr>
+
+                    <tr>
+                        <td>1998</td>
+                        <td>CSS2</td>
+                        <td>Added positioning, z-index, and media types.</td>
+                    </tr>
+                </table>
+
+                </sectoin>
+
+                <section id="section3">
+                    <h2 id="heading3">Registration Form</h2>
+                    <form>
+                        <fieldset border="2px">
+                            <legend>User Account Details</legend>
+                            <label for="Full Name">Full Name:</label><br><br>
+                            <input type="text" name="full name" id="fullname" placeholder="John Doo" required="true">
+                            <br><br>
+
+                            <label for="Email Address">Email Address:</label><br><br>
+                            <input type="email" name="email address" id="emailaddress" required="true">
+                            <br><br>
+
+                            <label for="password">Password:</label><br><br>
+                            <input type="password" name="password" id="password" required="true">
+                            <br><br>
+
+                            <label for="gender">Gender:</label>
+                            <lable><input class="r" type="radio" name="gender" value="Male">Male</lable>
+                            <lable><input class="r" type="radio" name="gender" value="Female">Female</lable>
+                            <br>
+
+                            <label for="Highest Qualification">Highest Qualification:</label>
+                            <select id="standard">
+                                <option value="10th">10th Standard</option>
+                                <option value="12th">12th Standard</option>
+                                <option value="graducation">Graducation</option>
+                            </select>
+                            <br><br>
+
+                            <button id="btn1" type="submit">Submit Details</button>
+                            <button id="btn2" type="reset">Clear form</button>
+
+                        </fieldset>
+
+                    </form>
+
+                    <footer>
+                        <P id="p1">&COPY; Code - World. All Rights Reserved</P>
+                    </footer>
+                </section>
+            </section>
+       </main>
+    </div>
+</body>
+</html>

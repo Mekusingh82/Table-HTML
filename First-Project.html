@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyFirstProject</title>
     <style>
         body {
             margin: 0px;
@@ -12,24 +12,22 @@
             background-color: lch(84.62% 17.78 198.2);
         }
 
-        header {
+        #header {
             padding-top: 60px;
             padding-left: 80px;
             padding-right: 70px;
         }
 
-        h1 {
-
+        #head {
             color: oklab(62.483% 0.23686 0.04138);
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif*/;
             font-weight: bold;
             font-size: 120px;
             word-spacing: 5px;
             margin-bottom: 0;
-
         }
 
-        p {
+        #para {
             color: oklch(57.909% 0.1749 332.633);
             margin-top: 0;
             font-family: 'sans-serif';
@@ -37,7 +35,7 @@
             word-spacing: 5px;
         }
 
-        #learn-btn {
+        #learn-buttom {
             width: 120px;
             height: 35px;
             color: #fff;
@@ -51,7 +49,7 @@
             border-radius: 10px;
         }
 
-        #watch-btn {
+        #watch-buttom {
             width: 120px;
             height: 35px;
             color: #fff;
@@ -66,22 +64,23 @@
 
         }
 
-        section {
+        #section {
             width: 400px;
-            height: 500px;
+            height: 450px;
             background-color: rgb(222, 233, 233);
             position: absolute;
-            top: 50px;
+            top: 60px;
             right: 80px;
+            border-radius: 5px;
         }
 
-        div {
+        .div1 {
             float: left;
         }
 
-        img {
-            margin-top: 70px;
-            margin-bottom: 20px;
+        #image {
+            margin-top: 40px;
+            margin-bottom: 40px;
             margin-right: 20px;
             margin-left: 20px;
             width: 350px;
@@ -96,18 +95,20 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1>I am Meku</h1>
-            <p>I am Meku Kumari and from Chapra, Bihar.</p>
-            <buttom id="learn-btn">Learn more</buttom>
-            <buttom id="watch-btn">Watch more</buttom>
+    <!-- <heading section> -->
+    <header id="header">
+        <div class="div">
+            <h1 id="head">I am Meku</h1>
+            <p id="para">I am Meku Kumari and from Chapra, Bihar.</p>
+            <buttom id="learn-buttom">Learn more</buttom>
+            <buttom id="watch-buttom">Watch more</buttom>
         </div>
     </header>
 
-    <section>
-        <div>
-            <img src="image\h.jpeg" alt="Image" width="400px" height="500px">
+    <!-- <image section> -->
+    <section id="section">
+        <div class="div1">
+            <img src="image\k.jpeg" alt="Image" width="400px" height="500px" id="image">
         </div>
     </section>
     
