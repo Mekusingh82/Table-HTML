@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn - Network Interruption</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #191919;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: space-between;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      width: 100%;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo span {
+      background-color: #0a66c2;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 0 4px;
+      border-radius: 2px;
+      margin-left: 1px;
+    }
+
+    .language-selector {
+      display: flex;
+      align-items: center;
+      border: 1px solid #dcdcdc;
+      border-radius: 4px;
+      padding: 6px 12px;
+      font-size: 14px;
+      color: #333;
+      background-color: #fff;
+    }
+
+    .language-selector svg {
+      margin-left: 8px;
+      width: 18px;
+      height: 18px;
+      fill: #666;
+    }
+
+    /* Main Content */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px 28px 40px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1.25;
+      margin-bottom: 28px;
+      color: #191919;
+    }
+
+    .primary-message {
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 1.35;
+      margin-bottom: 40px;
+      color: #212121;
+    }
+
+    .sub-message {
+      font-size: 15px;
+      line-height: 1.45;
+      color: #212121;
+      margin-bottom: 24px;
+    }
+
+    .apology {
+      font-size: 15px;
+      color: #212121;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 16px;
+      font-size: 14px;
+      color: #666;
+      border-top: 1px solid #eee;
+    }
+
+    .footer-logo {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .footer-logo span {
+      background-color: #0a66c2;
+      color: #fff;
+      font-size: 11px;
+      padding: 0 2px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      Linked<span>in</span>
+    </div>
+    <div class="language-selector">
+      English (English)
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+      </svg>
+    </div>
+  </header>
+
+  <!-- Main Body Content -->
+  <main>
+    <h1>Your LinkedIn Network Will Be Back Soon</h1>
+
+    <p class="primary-message">
+      We’ve notified our operations staff that you are having a problem reaching LinkedIn. We’ll get you reconnected soon.
+    </p>
+
+    <p class="sub-message">
+      You can leave this window open and we’ll automatically take you back to your LinkedIn home page in a few minutes.
+    </p>
+
+    <p class="apology">
+      We apologize for the interruption.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <span class="footer-logo">Linked<span>in</span></span> © 2026
+  </footer>
+
+</body>
+</html>
