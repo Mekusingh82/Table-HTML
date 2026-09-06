@@ -1,0 +1,11 @@
+/* Reset and Base Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: (rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.85)), url('https://unsplash.com') no-repeat center center;
+}

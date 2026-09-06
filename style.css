@@ -1,0 +1,110 @@
+/* General Page Styling */
+body {
+    background-color: lab(93.5% 3.13 -8.2);
+}
+
+/* Header Stylimg */
+#header {
+    color: rgb(4, 22, 158);
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+}
+
+/* Paragraph Styling */
+#para {
+    color: #f11313;
+    font-size: 20px;
+}
+
+/* Head Styling */
+#head {
+    color: rgb(241, 19, 23);
+    font-size: 30px;
+}
+
+/* Paragraph1 Styling */
+#para1 {
+    color: rgb(236, 23, 115);
+    font-size: 20px;
+}
+
+/* Head1 Styling */
+#head1 {
+    color: coral;
+    font-size: 22px;
+}
+
+/* Paragraph2 Styling */
+#para2 {
+    color: deeppink;
+    font-size: 20px;
+}
+
+/* Paragraph3 Styling */
+    #para3 {
+    color: rgb(195, 9, 108);
+    font-size: 20px;
+}
+
+/* Unorder List Styling */
+#ul {
+    color: rgb(213, 13, 244);
+    font-size: 18px;
+}
+
+/* Paragraph Styling */
+#para4 {
+    color: rgb(243, 4, 207);
+    font-size: 18px;
+}
+
+/* Sub Heading Styling */
+.sub-head1 {
+    color: hsl(322, 95%, 47%);
+    font-size: 22px;
+}
+
+/* Table Styling */
+#table {
+    width: 80%;
+    height: 100px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 50px 30px;        
+}
+
+/* Table heading Styling */
+#thead {
+    font-size: 25px;
+    background-color: rgb(255, 226, 226);
+    color: lab(61.94% 67.38 -15.56);
+    padding: 6px;
+}
+
+/* Table Body Styling */
+#tbody {
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fbf6f9;
+    color: rgba(253, 5, 228, 0.51);
+}
+
+/* Fieldset Styling */
+#fieldset {
+    color: rgb(222, 75, 163);
+    background-color: #f7f6f9;
+    font-size: 20px;
+}
+
+/* Buttom Styling */
+#buttom {
+    background-color: #fa0606;
+    color: white;
+}
+
+/* Paragragh Styling */
+#para3 {
+    color: lch(52.54% 81.62 8.41);
+    font-size: 20px;
+}

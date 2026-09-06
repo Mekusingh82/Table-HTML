@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram-Loging-Page</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #000;
+            color: white;
+            width: 100%;
+            padding: 5px;
+        }
+
+        h1 {
+            margin-top: 40px;
+            margin-bottom: 35px;
+        }
+
+        #language {
+            width: 25px;
+            padding: 0px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background: transparent;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            border: none;
+            margin-bottom: 25px;
+        }
+
+        #username {
+            border-color: black;
+            color: white;
+            background: transparent;
+            border-radius: 20px;
+            padding: 15px;
+            width: 30%;
+            border: none;
+            font-size: 15px;
+            box-sizing: border-box;
+            border: 1px solid #555;
+        }
+
+        #password {
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            padding: 15px;
+            width: 30%;
+            font-size: 15px;
+            box-sizing: border-box;
+            border: 1px solid #555;
+        }
+
+        #log-in {
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            width: 30%;
+            padding: 8px;
+            font-size: 20px;
+        }
+
+        #forget-password {
+            color: white;
+            margin-bottom: 100px;
+        }
+
+        .create {
+            margin-top: 20px;
+            background-color: black;
+            color: blue;
+            border-radius: 20px;
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+            font-size: 15px;
+            box-sizing: border-box;
+            border: 1px solid #555;
+            margin-top: 35px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div>
+            <h1>Instagram Loging Page</h1>
+
+            <label for="language" id="language">English (US)</label>
+                <select id="language">
+                    <option></option>
+                    <option>Select your language</option>
+                    <option>English</option>
+                    <option>Finish</option>
+                    <option>िहंदी</option>
+                    <option>गुजरात</option>
+                    <option>Afrikaans</option>
+                    <option>French (france)</option>
+                    <option>Suomi</option>
+                    <option>Nederlands</option>
+                    <option>Filipino</option>
+                    <option>Coratian (Coratia)</option>
+                    <option>Hrvatski</option>
+                    <option>Magyar</option>
+                    <option>Italiano</option>
+                </select>
+            <!-- <br><br> -->
+        </div>
+
+        <div>
+            <!-- <h1>Instagram Loging Page</h1> -->
+            <form>
+                <label for="username"></label>
+                <input type="text" name="username" id="username" placeholder="Username, email or mobile number" required>
+                <br><br>
+
+                <label for="password"></label>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <br><br>
+
+                <a href="https://www.instagram.com/furute_____coder"><button type="submit" id="log-in">Log in</button>
+                <br><br>
+            </form>
+
+            <a href="https://www.com.instagram.com/account/emailsignup" target="_blank" class="create-new-account"
+                id="forget-password">
+                <h3>Forget Password?</h3>
+            </a>
+
+            <footer>
+                <a href="https://www.instagram.com/account/emailsignup/"><input type="create new account" value="Create new account" 
+                    class="create"></a>
+
+                <P>Meta</P>
+            </footer>
+        </div>
+    </center>
+
+</body>
+</html>
